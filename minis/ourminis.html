@@ -1,0 +1,5359 @@
+<title>Alba Chronicles Miniatures</title>
+<style type="text/css">
+.card {
+ height:134px;
+ width:350px;
+ border:solid 1px #eeeeee;
+ overflow:hidden;
+ margin:2px;
+ padding:2px;
+ float:left;
+}
+.cardIcon{
+ width:120px;
+ height:120px;
+ border-right: solid 3px #555555;
+ border-bottom: solid 3px #555555;
+ border-left: solid 1px #cccccc;
+ border-top: solid 1px #cccccc;
+ /* padding:5px; */
+ margin-right:5px;
+ float:left; 
+ overflow:hidden;
+}
+.cardIcon a {
+height: inherit;
+width: inherit;
+vertical-align: middle;
+display: table-cell;
+}
+.cardIcon img {
+ border: 0px;
+/* width:100%; */
+ height:100%;
+ /* height: auto; */
+}
+.cardTitle {
+ font-weight: bold;
+}
+.cardRange {
+ margin-bottom:8px;
+}
+.cardReferences {
+ float:left;
+ margin-right:4px;
+}
+.cardOwner {
+ font-style: nomal;
+ font-size: medium;
+ color: #cccccc;
+}
+.Manufacturer {
+ font-size: larger;
+ font-weight: bold;
+ margin-bottom:8px;
+ margin-top:20px;
+}
+.Blister {
+ font-size: medium;
+ font-weight: bold;
+ margin-bottom:4px;
+ margin-top:4px;
+ margin-left: 4px;
+}
+</style>
+<div style="height:157px; background-color:#e2e2e2;margin:0px;text-align:center">
+<a href="http://albachronicles.wordpress.com/"><img src="http://albachronicles.files.wordpress.com/2013/11/cropped-banner21-6.jpg" border=0></a>
+</div>
+
+
+<style>
+input[type="checkbox"] + label {
+  margin-top: 2px;
+  border-style: solid;
+  border-color: grey;
+  height:25px;
+  width:80px;
+  display: inline-block;
+  padding:4px 3px 0px 3px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius:5px;
+ font-size:smaller;
+}
+input[type="checkbox"]:not(checked) + label {
+    background-color: lightgrey;
+    border-width: 1px 3px 3px 1px;
+}
+input[type="checkbox"]:checked + label {
+    background-color: darkgrey;  
+    border-width: 3px 1px 1px 3px;  
+}
+
+
+input[type="checkbox"] {
+    display: none;
+} /*Hide input element*/
+</style>
+ <style>
+.input-dwarf:not(checked) ~ div:not(.dwarf) {}
+.input-dwarf:checked ~ div:not(.dwarf) {display: none;}
+</style>
+<input type="checkbox" class="input-dwarf" id="cb-dwarf"><label for="cb-dwarf">dwarf</label> <style>
+.input-elf:not(checked) ~ div:not(.elf) {}
+.input-elf:checked ~ div:not(.elf) {display: none;}
+</style>
+<input type="checkbox" class="input-elf" id="cb-elf"><label for="cb-elf">elf</label> <style>
+.input-fairy:not(checked) ~ div:not(.fairy) {}
+.input-fairy:checked ~ div:not(.fairy) {display: none;}
+</style>
+<input type="checkbox" class="input-fairy" id="cb-fairy"><label for="cb-fairy">fairy</label> <style>
+.input-human:not(checked) ~ div:not(.human) {}
+.input-human:checked ~ div:not(.human) {display: none;}
+</style>
+<input type="checkbox" class="input-human" id="cb-human"><label for="cb-human">human</label>
+ <style>
+.input-orc:not(checked) ~ div:not(.orc) {}
+.input-orc:checked ~ div:not(.orc) {display: none;}
+</style>
+<input type="checkbox" class="input-orc" id="cb-orc"><label for="cb-orc">orc</label> <style>
+.input-goblin:not(checked) ~ div:not(.goblin) {}
+.input-goblin:checked ~ div:not(.goblin) {display: none;}
+</style>
+<input type="checkbox" class="input-goblin" id="cb-goblin"><label for="cb-goblin">goblin</label> <style>
+.input-lizardfolk:not(checked) ~ div:not(.lizardfolk) {}
+.input-lizardfolk:checked ~ div:not(.lizardfolk) {display: none;}
+</style>
+<input type="checkbox" class="input-lizardfolk" id="cb-lizardfolk"><label for="cb-lizardfolk">lizardfolk</label> <style>
+.input-undead:not(checked) ~ div:not(.undead) {}
+.input-undead:checked ~ div:not(.undead) {display: none;}
+</style>
+<input type="checkbox" class="input-undead" id="cb-undead"><label for="cb-undead">undead</label>
+ <style>
+.input-demon:not(checked) ~ div:not(.demon) {}
+.input-demon:checked ~ div:not(.demon) {display: none;}
+</style>
+<input type="checkbox" class="input-demon" id="cb-demon"><label for="cb-demon">demon</label> <style>
+.input-beast:not(checked) ~ div:not(.beast) {}
+.input-beast:checked ~ div:not(.beast) {display: none;}
+</style>
+<input type="checkbox" class="input-beast" id="cb-beast"><label for="cb-beast">beast</label> <style>
+.input-animal:not(checked) ~ div:not(.animal) {}
+.input-animal:checked ~ div:not(.animal) {display: none;}
+</style>
+<input type="checkbox" class="input-animal" id="cb-animal"><label for="cb-animal">animal</label>&nbsp;<font size="4">&diams;</font>&nbsp;
+ <style>
+.input-male:not(checked) ~ div:not(.male) {}
+.input-male:checked ~ div:not(.male) {display: none;}
+</style>
+<input type="checkbox" class="input-male" id="cb-male"><label for="cb-male">male</label> <style>
+.input-female:not(checked) ~ div:not(.female) {}
+.input-female:checked ~ div:not(.female) {display: none;}
+</style>
+<input type="checkbox" class="input-female" id="cb-female"><label for="cb-female">female</label> <style>
+.input-kid:not(checked) ~ div:not(.kid) {}
+.input-kid:checked ~ div:not(.kid) {display: none;}
+</style>
+<input type="checkbox" class="input-kid" id="cb-kid"><label for="cb-kid">kid</label>&nbsp;<font size="4">&diams;</font>&nbsp;
+ <style>
+.input-civilian:not(checked) ~ div:not(.civilian) {}
+.input-civilian:checked ~ div:not(.civilian) {display: none;}
+</style>
+<input type="checkbox" class="input-civilian" id="cb-civilian"><label for="cb-civilian">civilian</label> <style>
+.input-musician:not(checked) ~ div:not(.musician) {}
+.input-musician:checked ~ div:not(.musician) {display: none;}
+</style>
+<input type="checkbox" class="input-musician" id="cb-musician"><label for="cb-musician">musician</label>&nbsp;<font size="4">&diams;</font>&nbsp; <style>
+.input-axe:not(checked) ~ div:not(.axe) {}
+.input-axe:checked ~ div:not(.axe) {display: none;}
+</style>
+<input type="checkbox" class="input-axe" id="cb-axe"><label for="cb-axe">axe</label>
+ <style>
+.input-bow:not(checked) ~ div:not(.bow) {}
+.input-bow:checked ~ div:not(.bow) {display: none;}
+</style>
+<input type="checkbox" class="input-bow" id="cb-bow"><label for="cb-bow">bow</label> <style>
+.input-club:not(checked) ~ div:not(.club) {}
+.input-club:checked ~ div:not(.club) {display: none;}
+</style>
+<input type="checkbox" class="input-club" id="cb-club"><label for="cb-club">club</label> <style>
+.input-hammer:not(checked) ~ div:not(.hammer) {}
+.input-hammer:checked ~ div:not(.hammer) {display: none;}
+</style>
+<input type="checkbox" class="input-hammer" id="cb-hammer"><label for="cb-hammer">hammer</label> <style>
+.input-mace:not(checked) ~ div:not(.mace) {}
+.input-mace:checked ~ div:not(.mace) {display: none;}
+</style>
+<input type="checkbox" class="input-mace" id="cb-mace"><label for="cb-mace">mace</label>
+ <style>
+.input-spear:not(checked) ~ div:not(.spear) {}
+.input-spear:checked ~ div:not(.spear) {display: none;}
+</style>
+<input type="checkbox" class="input-spear" id="cb-spear"><label for="cb-spear">spear</label> <style>
+.input-staff:not(checked) ~ div:not(.staff) {}
+.input-staff:checked ~ div:not(.staff) {display: none;}
+</style>
+<input type="checkbox" class="input-staff" id="cb-staff"><label for="cb-staff">staff</label> <style>
+.input-sword:not(checked) ~ div:not(.sword) {}
+.input-sword:checked ~ div:not(.sword) {display: none;}
+</style>
+<input type="checkbox" class="input-sword" id="cb-sword"><label for="cb-sword">sword</label>&nbsp;<font size="4">&diams;</font>&nbsp;
+
+<br>
+<div style="clear:left;"></div><div class="Manufacturer">Black Tree Design</div>
+<div class="card female male kid human civilian hammer">
+ <a name="IA1029"></a>
+ <div class="cardIcon">
+  <img src="./BTD-IA1029_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  IA1029 Celtic Folk I (4)
+ </div><div class="cardRange">
+  Historical - Ancients (Celts)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male kid human civilian sword">
+ <a name="IA1029a"></a>
+ <div class="cardIcon">
+  <img src="./BTD-IA1029a_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  IA1029a Boy
+ </div><div class="cardRange">
+  Historical - Ancients (Celts)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female kid human civilian">
+ <a name="IA1029b"></a>
+ <div class="cardIcon">
+  <img src="./BTD-IA1029b_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  IA1029b Girl
+ </div><div class="cardRange">
+  Historical - Ancients (Celts)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian hammer">
+ <a name="IA1029c"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  IA1029c Blacksmith
+ </div><div class="cardRange">
+  Historical - Ancients (Celts)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human civilian">
+ <a name="IA1029d"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  IA1029d Bar Maiden
+ </div><div class="cardRange">
+  Historical - Ancients (Celts)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="FD1005"></a>
+ <div class="cardIcon">
+  <img src="./BTD-FD1005_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  FD1005 Brothers of Shrewsbury Abbey (4)
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian book">
+ <a name="FD1005a"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  FD1005a Monk
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="FD1005b"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  FD1005b Monk
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="FD1005c"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  FD1005c Monk
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="FD1005d"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  FD1005d Monk
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male kid human civilian staff axe">
+ <a name="FD1048"></a>
+ <div class="cardIcon">
+  <img src="./BTD-FD1048_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  FD1048 Good People of the Land II (4)
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian axe">
+ <a name="FD1048a"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  FD1048a Woodcutter with axe
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male kid human civilian">
+ <a name="FD1048b"></a>
+ <div class="cardIcon">
+  <img src="./BTD-FD1048b_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  FD1048b Boy
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian staff">
+ <a name="FD1048c"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  FD1048c Shepherd
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="FD1048d"></a>
+ <div class="cardIcon">
+  <img src="./BTD-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  FD1048d Farmer with scythe
+ </div><div class="cardRange">
+  Historical - Feudal (2nd Crusade)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">EM4 Miniatures</div>
+<div class="card male human staff">
+ <a name="Elf1a"></a>
+ <div class="cardIcon">
+  <img src="./EM4-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  Elf1a Hargalf the Wizard
+ </div><div class="cardRange">
+  Elfsera 
+ </div><div class="cardPartOf">
+  part of <a href="#Elf1">Elf1</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male bow">
+ <a name="Elf1b"></a>
+ <div class="cardIcon">
+  <img src="./EM4-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  Elf1b Fidorn the Ranger
+ </div><div class="cardRange">
+  Elfsera 
+ </div><div class="cardPartOf">
+  part of <a href="#Elf1">Elf1</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male sword">
+ <a name="Elf1c"></a>
+ <div class="cardIcon">
+  <img src="./EM4-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  Elf1c Roldo the Halfling
+ </div><div class="cardRange">
+  Elfsera 
+ </div><div class="cardPartOf">
+  part of <a href="#Elf1">Elf1</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf human sword bow">
+ <a name="Elf1d"></a>
+ <div class="cardIcon">
+  <img src="./EM4-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  Elf1d Daldylas the Elf 
+ </div><div class="cardRange">
+  Elfsera 
+ </div><div class="cardPartOf">
+  part of <a href="#Elf1">Elf1</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf axe">
+ <a name="Elf1e"></a>
+ <div class="cardIcon">
+  <img src="./EM4-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  Elf1e Gimradd the Dwarf 
+ </div><div class="cardRange">
+  Elfsera 
+ </div><div class="cardPartOf">
+  part of <a href="#Elf1">Elf1</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Fantasy Production</div>
+<div class="card male human elf staff">
+ <a name="15020"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  15020 Male Cleric of Efferd
+ </div><div class="cardRange">
+  The Dark Eye - Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/characters-15000-c-30_32/15020-male-cleric-of-efferd-p-925.html">[1]</a>
+ </div><div class="cardOwner">
+  [wk]
+ </div>
+</div>
+<div class="card male human elf spear">
+ <a name="15023"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  15023 Male Sylvan Elf
+ </div><div class="cardRange">
+  The Dark Eye - Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/characters-15000-c-30_32/15023-male-sylvan-elf-p-928.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsahelden&id=23">[2]</a>
+ </div><div class="cardOwner">
+  [wk]
+ </div>
+</div>
+<div class="card female human civilian book">
+ <a name="15035"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  15035 Female Cleric of Hesinde
+ </div><div class="cardRange">
+  The Dark Eye - Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/characters-15000-c-30_32/15035-female-cleric-of-hesinde-p-940.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsahelden&id=35">[2]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male human elf civilian">
+ <a name="16007"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  16007 Patriarch Amir Honak of Al Anfa
+ </div><div class="cardRange">
+  The Dark Eye - Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/personalities-16000-c-30_33/16007-patriarch-amir-honak-of-al-anfa-p-981.html">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male undead sword">
+ <a name="17008"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  17008 Skeleton
+ </div><div class="cardRange">
+  The Dark Eye - Creatures
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/creatures-17000-c-30_34/17008-skeleton-p-1005.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsakreaturen&id=101">[2]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card beast animal">
+ <a name="17010a"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  17010a Wolf
+ </div><div class="cardRange">
+  The Dark Eye - Creatures
+ </div><div class="cardPartOf">
+  part of <a href="#17010">17010</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card beast animal">
+ <a name="17010b"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  17010b Wolf
+ </div><div class="cardRange">
+  The Dark Eye - Creatures
+ </div><div class="cardPartOf">
+  part of <a href="#17010">17010</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card beast animal">
+ <a name="17019"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  17019 Cave Bear
+ </div><div class="cardRange">
+  The Dark Eye - Creatures
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/creatures-17000-c-30_34/17019-cave-bear-p-1015.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsakreaturen&id=112">[2]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card beast animal">
+ <a name="17025"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  17025 Pack of Giant Rats
+ </div><div class="cardRange">
+  The Dark Eye - Creatures
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/creatures-17000-c-30_34/17025-pack-of-giant-rats-8-p-1021.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsakreaturen&id=118">[2]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male human spear">
+ <a name="18005a"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  18005a Horasian Guard Pikemen standing
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  part of <a href="#18005">18005</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human spear">
+ <a name="18005b"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  18005b Horasian Guard Pikemen advancing
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  part of <a href="#18005">18005</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human sword">
+ <a name="18010"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  18010 Armed Knight with 2 Handed Sword
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/adventurers-at-arms-18000-c-30_35/18010-armed-knight-with-2-handed-sword-p-1059.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsaaventurier&id=155">[2]</a>
+ </div><div class="cardOwner">
+  [wk]
+ </div>
+</div>
+<div class="card male undead sword">
+ <a name="18014a"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  18014a Skeleton Warrior w/ sword
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  part of <a href="#18014">18014</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male undead axe">
+ <a name="18014b"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1680px"> 
+ </div><div class="cardTitle">
+  18014b Skeleton Warrior w/ axe
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  part of <a href="#18014">18014</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card female human axe">
+ <a name="18029a"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1800px"> 
+ </div><div class="cardTitle">
+  18029a Thorwalian Raider w/ axe
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  part of <a href="#18029">18029</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male human sword">
+ <a name="18029b"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-1920px"> 
+ </div><div class="cardTitle">
+  18029b Thorwalian Raider w/ sword
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  part of <a href="#18029">18029</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male human sword">
+ <a name="19002c"></a>
+ <div class="cardIcon">
+  <img src="./FP-gallery.jpg" style="margin-left:-2040px"> 
+ </div><div class="cardTitle">
+  19002c Weiden Light Knight Crested Helm
+ </div><div class="cardRange">
+  Armalion
+ </div><div class="cardPartOf">
+  part of <a href="#19002">19002</a>
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/armalion-c-30_36/19002c-weiden-light-knight-crested-helm-p-1133.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Games Workshop</div>
+<div class="card male elf bow">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+   Elven Archer
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf bow">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+   Elven Archer
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf sword">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+   Elven Swordsman
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf sword">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+   Elven Swordsman
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf sword">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+   Man of Númenor
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf sword">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+   Man of Númenor
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf sword">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+   Man of Númenor
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf sword">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+   Man of Númenor
+ </div><div class="cardRange">
+  Warriors of the Last Alliance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Grenadier</div>
+<div class="card male dwarf musician">
+ <a name="021c"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  021c Dwarf with Drum
+ </div><div class="cardRange">
+  Fantasy Lords - Second Series
+ </div><div class="cardPartOf">
+  part of <a href="#021">021</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-flbp-021c.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card female human musician">
+ <a name="023c"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  023c Amazon with Signaling Horn
+ </div><div class="cardRange">
+  Fantasy Lords - Second Series
+ </div><div class="cardPartOf">
+  part of <a href="#023">023</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-flbp-023c.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="542"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  542 Tsin Dragon
+ </div><div class="cardRange">
+  Fantasy Lords - 500 Series
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-FL-542-pack.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf human">
+ <a name="825"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  825 Elf Mage
+ </div><div class="cardRange">
+  Julie Guthrie's Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Gren-jgp-825.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male orc sword">
+ <a name="832"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  832 Orc Champion
+ </div><div class="cardRange">
+  Julie Guthrie's Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Gren-jgp-832.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male">
+ <a name="853"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  853 Halfling Thief
+ </div><div class="cardRange">
+  Julie Guthrie's Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Gren-jgp-853.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male elf sword">
+ <a name="858"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  858 Elven Warrior
+ </div><div class="cardRange">
+  Julie Guthrie's Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Gren-jgp-858.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf axe">
+ <a name="860"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  860 Dwarf Hero
+ </div><div class="cardRange">
+  Julie Guthrie's Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Gren-jgp-860.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male orc lizardfolk sword">
+ <a name="873"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  873 Ogre Champion
+ </div><div class="cardRange">
+  Julie Guthrie's Personalities
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Gren-jgp-873.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male dwarf sword">
+ <a name="2003a"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  2003a Dwarf w/ Short Sword
+ </div><div class="cardRange">
+  AD&D - Small Figure Sets
+ </div><div class="cardPartOf">
+  part of <a href="#2003">2003</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2003d.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card female human elf musician civilian">
+ <a name="2007d"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  2007d Bard
+ </div><div class="cardRange">
+  AD&D - Small Figure Sets
+ </div><div class="cardPartOf">
+  part of <a href="#2007">2007</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2007d.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card female male human axe">
+ <a name="2013j"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  2013j Choff, Female Ranger in Splint
+ </div><div class="cardRange">
+  AD&D - Small Figure Sets
+ </div><div class="cardPartOf">
+  part of <a href="#2013">2013</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2013j.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card female male human sword">
+ <a name="8002a"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  8002a Female Assassin
+ </div><div class="cardRange">
+  Action Art Series
+ </div><div class="cardPartOf">
+  part of <a href="#8002">8002</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-albs-8002a.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male dwarf spear">
+ <a name="A182"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1680px"> 
+ </div><div class="cardTitle">
+  A182 Dwarf with Glaive
+ </div><div class="cardRange">
+  Battle Lords Box Sets, Fantasy Warriors
+ </div><div class="cardPartOf">
+  part of 1603 (1603c), 931 (931c)
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-blords-1603c.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-931c.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male dwarf bow">
+ <a name="A189"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1800px"> 
+ </div><div class="cardTitle">
+  A189 Dwarf with Cross Bow
+ </div><div class="cardRange">
+  Battle Lords Box Sets, Fantasy Warriors
+ </div><div class="cardPartOf">
+  part of 1603 (1603j), 934 (934a)
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-blords-1603j.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-934a.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male orc axe">
+ <a name="M404"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-1920px"> 
+ </div><div class="cardTitle">
+  M404 Orc w/ axe
+ </div><div class="cardRange">
+  Fantasy Warriors
+ </div><div class="cardPartOf">
+  part of 943 (943b)
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-943b.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc sword">
+ <a name="M405"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-2040px"> 
+ </div><div class="cardTitle">
+  M405 Orc w/ two swords
+ </div><div class="cardRange">
+  Fantasy Warriors
+ </div><div class="cardPartOf">
+  part of 943 (943c)
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-943c.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male orc club">
+ <a name="M406"></a>
+ <div class="cardIcon">
+  <img src="./G-gallery.jpg" style="margin-left:-2160px"> 
+ </div><div class="cardTitle">
+  M406 Orc w/ club
+ </div><div class="cardRange">
+  Fantasy Warriors
+ </div><div class="cardPartOf">
+  part of 943 (943a)
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-943a.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Grippling Beast</div>
+<div class="card male human sword axe spear">
+ <a name="GBP01"></a>
+ <div class="cardIcon">
+  <img src="./GB-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  GBP01 Viking Hirdmen
+ </div><div class="cardRange">
+  
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Bob Naismith
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Harlequin</div>
+<div class="card male human spear">
+ <a name="0808a"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  0808a Spearman
+ </div><div class="cardRange">
+  Fantasy Armies - Men of Averaign
+ </div><div class="cardPartOf">
+  part of <a href="#0808">0808</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human spear">
+ <a name="0808b"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  0808b Spearman
+ </div><div class="cardRange">
+  Fantasy Armies - Men of Averaign
+ </div><div class="cardPartOf">
+  part of <a href="#0808">0808</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human spear">
+ <a name="0808c"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  0808c Spearman
+ </div><div class="cardRange">
+  Fantasy Armies - Men of Averaign
+ </div><div class="cardPartOf">
+  part of <a href="#0808">0808</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin sword">
+ <a name="0239b"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  0239b Goblin with sword
+ </div><div class="cardRange">
+  Fantasy Armies - Orcs & Goblins
+ </div><div class="cardPartOf">
+  part of <a href="#0239">0239</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin axe">
+ <a name="0240a"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  0240a Goblin with axe
+ </div><div class="cardRange">
+  Fantasy Armies - Orcs & Goblins
+ </div><div class="cardPartOf">
+  part of <a href="#0240">0240</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male undead axe">
+ <a name="1015a"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  1015a Skeleton with axe
+ </div><div class="cardRange">
+  Undead
+ </div><div class="cardPartOf">
+  part of <a href="#1015">1015</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male undead staff">
+ <a name="1015b"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  1015b Skeleton with halberd (converted)
+ </div><div class="cardRange">
+  Undead
+ </div><div class="cardPartOf">
+  part of <a href="#1015">1015</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male undead sword">
+ <a name="1015c"></a>
+ <div class="cardIcon">
+  <img src="./HQ-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  1015c Skeleton with sword
+ </div><div class="cardRange">
+  Undead
+ </div><div class="cardPartOf">
+  part of <a href="#1015">1015</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Hasslefree Miniatures</div>
+<div class="card female human elf sword">
+ <a name="HFH003"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  HFH003 Tiriel (B)
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White (2004)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human elf civilian">
+ <a name="HFH030"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  HFH030 Miranda
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White (2005)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human sword">
+ <a name="HFH060"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  HFH060 Alicia
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human elf sword">
+ <a name="HFH065"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  HFH065 Veda-Ann
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White (2012)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human spear">
+ <a name="HFH068"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  HFH068 Boudi
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White (2013)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human elf civilian">
+ <a name="HFH087"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  HFH087 Lenore
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White (2014)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human axe">
+ <a name="HFH116"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  HFH116 Dynamic Haleth
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human sword axe civilian">
+ <a name="HFH117"></a>
+ <div class="cardIcon">
+  <img src="./HF-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  HFH117 Ulfred
+ </div><div class="cardRange">
+  Fantasy Humans
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kev White
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Hersey</div>
+<div class="card female human elf sword">
+ <a name="HEROES016"></a>
+ <div class="cardIcon">
+  <img src="./Hersey-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  HEROES016 Si'Rene, Female Elf Warrior
+ </div><div class="cardRange">
+  SPYGLASS/EOLITH 
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Steve J. Buddle
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Hobby Products</div>
+<div class="card male dwarf axe">
+ <a name="C1008q"></a>
+ <div class="cardIcon">
+  <img src="./HP-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  C1008q Dwarf w. pole-weapon, armoured
+ </div><div class="cardRange">
+  Metal Magic - Fantasy
+ </div><div class="cardPartOf">
+  part of <a href="#C1008">C1008</a>
+ </div><div class="cardSculptor">
+  Sculptor: Josef Ochmann (1987)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:MetalMagic-C1008q.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Mithril</div>
+<div class="card male elf bow">
+ <a name="M65"></a>
+ <div class="cardIcon">
+  <img src="./Mithril-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  M65 Legolas
+ </div><div class="cardRange">
+  Halls of the Elven King
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb (1988)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Mithril-M65.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Mithril-M65a.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc mace">
+ <a name="M149"></a>
+ <div class="cardIcon">
+  <img src="./Mithril-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  M149 Half-Troll Commander
+ </div><div class="cardRange">
+  Gorgoroth
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb (1990)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Mithril-M149A.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Mithril-M149.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Oathsworn Miniatures</div>
+<div class="card male dwarf hammer">
+ <a name="Hargin Hammerhand"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  Hargin Hammerhand Dwarf warrior
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805429/hargin-hammerhand-dwarf-warrior.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer">
+ <a name="Grindol Stonehide"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  Grindol Stonehide Dwarf warrior
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805430/grindol-stonehide-dwarf-warrior.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female dwarf axe">
+ <a name="Magda Rogvirsdottir"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1800px"> 
+ </div><div class="cardTitle">
+  Magda Rogvirsdottir Dwarf shieldmaiden
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805431/magda-rogvirsdottir-dwarf-shieldmaiden.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf axe">
+ <a name="Mordrin Pathfinder"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1920px"> 
+ </div><div class="cardTitle">
+  Mordrin Pathfinder Dwarf ranger 
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805433/mordrin-pathfinder-dwarf-ranger.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf axe">
+ <a name="Baragor Baldursson"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  Baragor Baldursson Dwarf longbeard
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805434/baragor-baldursson-dwarf-longbeard.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer bow">
+ <a name="Brogar Baldursson"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  Brogar Baldursson Dwarf quarreller
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805435/brogar-baldursson-dwarf-quarreller.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf civilian axe">
+ <a name="Burlok Baldursson"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  Burlok Baldursson Dwarf longbeard
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805436/burlok-baldursson-dwarf-longbeard.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female dwarf hammer">
+ <a name="Kettra Rogvirsdottir"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1680px"> 
+ </div><div class="cardTitle">
+  Kettra Rogvirsdottir Dwarf shieldmaiden
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805437/kettra-rogvirsdottir-dwarf-shieldmaiden.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer">
+ <a name="Duregar Runestriker"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  Duregar Runestriker Dwarf runepriest
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805438/duregar-runestriker-dwarf-runepriest.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf axe">
+ <a name="Borgrimm Deathseeker"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  Borgrimm Deathseeker Dwarf berserker
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805439/borgrimm-deathseeker-dwarf-berserker.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female dwarf">
+ <a name="Helga Grummsdottir"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  Helga Grummsdottir Dwarf rogue 
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805440/helga-grummsdottir-dwarf-rogue.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female dwarf sword">
+ <a name="Astrid Quickblade"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  Astrid Quickblade Dwarf rogue 
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805441/astrid-quickblade-dwarf-rogue.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf civilian hammer">
+ <a name="Alric Ironpounder"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  Alric Ironpounder Dwarf smith 
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805442/alric-ironpounder-dwarf-smith.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female dwarf staff">
+ <a name="Olka the Blessed"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-2160px"> 
+ </div><div class="cardTitle">
+  Olka the Blessed Dwarf priestess 
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805443/olka-the-blessed-dwarf-priestess.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf civilian">
+ <a name="Ulfar Oathkeeper"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-2400px"> 
+ </div><div class="cardTitle">
+  Ulfar Oathkeeper Dwarf grudgebearer
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805445/ulfar-oathkeeper-dwarf-grudgebearer.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female axe hammer">
+ <a name="Sigrun Deathseeker"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-2280px"> 
+ </div><div class="cardTitle">
+  Sigrun Deathseeker female Dwarf berserker
+ </div><div class="cardRange">
+  Heroes of the Dwarfs
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805446/sigrun-deathseeker-female-dwarf-berserker.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer">
+ <a name="Kazgar Ironbeard"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  Kazgar Ironbeard Dwarf king 
+ </div><div class="cardRange">
+  Heros
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805447/kazgar-ironbeard-dwarf-king-with-shieldbearer.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf">
+ <a name="Borri Foehammer"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  Borri Foehammer Dwarf king's shieldbearer
+ </div><div class="cardRange">
+  Heros
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805447/kazgar-ironbeard-dwarf-king-with-shieldbearer.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer">
+ <a name="Grum Grimmson"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  Grum Grimmson Dwarf king's bodyguard
+ </div><div class="cardRange">
+  Heros
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805448/grum-grimmson-dwarf-kings-bodyguard.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer">
+ <a name="Grom Grimmson"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  Grom Grimmson Dwarf king's bodyguard
+ </div><div class="cardRange">
+  Heros
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805449/grom-grimmson-dwarf-kings-bodyguard.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male dwarf hammer">
+ <a name="Morek Trollhide"></a>
+ <div class="cardIcon">
+  <img src="./OS-gallery.jpg" style="margin-left:-2040px"> 
+ </div><div class="cardTitle">
+  Morek Trollhide Dwarf king's champion
+ </div><div class="cardRange">
+  Heros
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Lovejoy (2013)
+ </div><div class="cardReferences">
+  <a href="http://www.oathswornminiatures.co.uk/p/8805450/morek-trollhide-dwarf-kings-champion.html">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Perry Miniatures</div>
+<div class="card male human civilian">
+ <a name="CU28"></a>
+ <div class="cardIcon">
+  <img src="./PM-CU28_small.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  CU28 Clergy (mixed priests and monks)
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1786">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="CU28a"></a>
+ <div class="cardIcon">
+  <img src="./PM-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  CU28a Praying Monk
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  part of <a href="#CU28">CU28</a>
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1787">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian staff">
+ <a name="CU28b"></a>
+ <div class="cardIcon">
+  <img src="./PM-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  CU28b Monk
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  part of <a href="#CU28">CU28</a>
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1788">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian staff">
+ <a name="CU28c"></a>
+ <div class="cardIcon">
+  <img src="./PM-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  CU28c Monk
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  part of <a href="#CU28">CU28</a>
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1789">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="CU28d"></a>
+ <div class="cardIcon">
+  <img src="./PM-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  CU28d Monk
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  part of <a href="#CU28">CU28</a>
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1790">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="CU28e"></a>
+ <div class="cardIcon">
+  <img src="./PM-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  CU28e Praying Monk
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  part of <a href="#CU28">CU28</a>
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1791">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="CU28f"></a>
+ <div class="cardIcon">
+  <img src="./PM-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  CU28f Praying Monk
+ </div><div class="cardRange">
+  Metal Range - Crusaders
+ </div><div class="cardPartOf">
+  part of <a href="#CU28">CU28</a>
+ </div><div class="cardSculptor">
+  Sculptor: Michael Perry
+ </div><div class="cardReferences">
+  <a href="https://www.perry-miniatures.com/product_info.php?cPath=23_33_52&products_id=1792">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Prince August</div>
+<div class="card male human sword">
+ <a name="CH13"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  CH13 Druid
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-CH13.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human elf sword">
+ <a name="CH21"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  CH21 Female Fighter
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-CH21.jpg">[1]</a> <a href="http://shop.princeaugust.ie/cast-metal-figures/character-miniatures/female-fighter-mailed-metal-miniature/">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human mace">
+ <a name="CH25B1"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  CH25B1 Armored Cleric 1
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Characters
+ </div><div class="cardPartOf">
+  part of <a href="#CH25B">CH25B</a>
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-CH25B1.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human mace">
+ <a name="CH25B2"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  CH25B2 Armored Cleric 2
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Characters
+ </div><div class="cardPartOf">
+  part of <a href="#CH25B">CH25B</a>
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-CH25B2.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human mace">
+ <a name="CH25B3"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  CH25B3 Armored Cleric 3
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Characters
+ </div><div class="cardPartOf">
+  part of <a href="#CH25B">CH25B</a>
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-CH25B3.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male undead human civilian">
+ <a name="UN1"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  UN1 Vampire
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Undead
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-un001.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male undead sword">
+ <a name="UN5"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  UN5 Skeleton Standard Bearer
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Undead
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-un5.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian">
+ <a name="VL1"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  VL1 Innkeeper
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Villager
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-inn.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf civilian book">
+ <a name="VL2"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  VL2 Village Sage
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Villager
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-vl2.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf civilian">
+ <a name="VL3"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  VL3 Juggler
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Villager
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-vl3.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf civilian hammer">
+ <a name="VL4"></a>
+ <div class="cardIcon">
+  <img src="./PA-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  VL4 Blacksmith
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Villager
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Pa-f-vl4.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Rafm Miniatures</div>
+<div class="card animal">
+ <a name="3071a"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  3071a Horse
+ </div><div class="cardRange">
+  Elves of the Isles
+ </div><div class="cardPartOf">
+  part of <a href="#3071">3071</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Elves_of_the_Isles_%28RAFM%29#3071_Elf_Cavalry_of_the_Wind_Riders">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf">
+ <a name="3071b"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  3071b Elven Knight
+ </div><div class="cardRange">
+  Elves of the Isles
+ </div><div class="cardPartOf">
+  part of <a href="#3071">3071</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Elves_of_the_Isles_%28RAFM%29#3071_Elf_Cavalry_of_the_Wind_Riders">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name="3071c"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  3071c Banner / Spear / Sword
+ </div><div class="cardRange">
+  Elves of the Isles
+ </div><div class="cardPartOf">
+  part of <a href="#3071">3071</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Elves_of_the_Isles_%28RAFM%29#3071_Elf_Cavalry_of_the_Wind_Riders">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name="3071d"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  3071d Horse
+ </div><div class="cardRange">
+  Elves of the Isles
+ </div><div class="cardPartOf">
+  part of <a href="#3071">3071</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Elves_of_the_Isles_%28RAFM%29#3071_Elf_Cavalry_of_the_Wind_Riders">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf bow">
+ <a name="3071e"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  3071e Elven Archer
+ </div><div class="cardRange">
+  Elves of the Isles
+ </div><div class="cardPartOf">
+  part of <a href="#3071">3071</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Elves_of_the_Isles_%28RAFM%29#3071_Elf_Cavalry_of_the_Wind_Riders">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc bow">
+ <a name="3206a"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  3206a Orc w/ crossbow
+ </div><div class="cardRange">
+  Orcs
+ </div><div class="cardPartOf">
+  part of <a href="#3206">3206</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Orcs_%28RAFM%29#3206">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rafm-ORC-3206a.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc bow">
+ <a name="3206b"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  3206b Orc w/ crossbow
+ </div><div class="cardRange">
+  Orcs
+ </div><div class="cardPartOf">
+  part of <a href="#3206">3206</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Orcs_%28RAFM%29#3207">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rafm-ORC-3206a.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin">
+ <a name="3206c"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  3206c Goblin w/ mantlet
+ </div><div class="cardRange">
+  Orcs
+ </div><div class="cardPartOf">
+  part of <a href="#3206">3206</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Murch
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Orcs_%28RAFM%29#3208">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male club mace">
+ <a name="3613a"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  3613a Bodyguard w/ club
+ </div><div class="cardRange">
+  Monsters of Chaos
+ </div><div class="cardPartOf">
+  part of <a href="#3613">3613</a>
+ </div><div class="cardSculptor">
+  Sculptor: Stephen Koo
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Monsters_of_Chaos_%28RAFM%29">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male axe sword">
+ <a name="3613b"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  3613b Bodyguard w/ axe and sword 
+ </div><div class="cardRange">
+  Monsters of Chaos
+ </div><div class="cardPartOf">
+  part of <a href="#3613">3613</a>
+ </div><div class="cardSculptor">
+  Sculptor: Stephen Koo
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Monsters_of_Chaos_%28RAFM%29">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male sword">
+ <a name="3613c"></a>
+ <div class="cardIcon">
+  <img src="./RAF-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  3613c Bodyguard w/ 2-handed sword
+ </div><div class="cardRange">
+  Monsters of Chaos
+ </div><div class="cardPartOf">
+  part of <a href="#3613">3613</a>
+ </div><div class="cardSculptor">
+  Sculptor: Stephen Koo
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Monsters_of_Chaos_%28RAFM%29">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Ral Partha</div>
+<div class="card male orc goblin bow">
+ <a name="02-053a"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  02-053a Goblin Archer A
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (Fantasy Armies)
+ </div><div class="cardPartOf">
+  part of <a href="#02-053">02-053</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-053ba.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin bow">
+ <a name="02-053a"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  02-053a Goblin Archer A
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (Fantasy Armies)
+ </div><div class="cardPartOf">
+  part of <a href="#02-053">02-053</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-053ba.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin bow">
+ <a name="02-053b"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  02-053b Goblin Archer B
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (Fantasy Armies)
+ </div><div class="cardPartOf">
+  part of <a href="#02-053">02-053</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-053bb.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin bow">
+ <a name="02-053b"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  02-053b Goblin Archer B
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (Fantasy Armies)
+ </div><div class="cardPartOf">
+  part of <a href="#02-053">02-053</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-053bb.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin bow">
+ <a name="02-053c"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  02-053c Goblin Archer C
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (Fantasy Armies)
+ </div><div class="cardPartOf">
+  part of <a href="#02-053">02-053</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc goblin bow">
+ <a name="02-053c"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  02-053c Goblin Archer C
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (Fantasy Armies)
+ </div><div class="cardPartOf">
+  part of <a href="#02-053">02-053</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name="02-947a"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  02-947a Warhorse
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  part of <a href="#02-947">02-947</a>
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1986)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf sword">
+ <a name="02-947b"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  02-947b Mounted Hero 
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  part of <a href="#02-947">02-947</a>
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1986)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf bow">
+ <a name="02-948a"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  02-948a Archer w/ Plate
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  part of <a href="#02-948">02-948</a>
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1987)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-948a.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human elf bow">
+ <a name="02-948b"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  02-948b Female Archer
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  part of <a href="#02-948">02-948</a>
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1987)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-948b.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf bow">
+ <a name="02-948c"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1680px"> 
+ </div><div class="cardTitle">
+  02-948c Archer w/ Chain
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  part of <a href="#02-948">02-948</a>
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1987)
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf staff">
+ <a name="03-001"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1800px"> 
+ </div><div class="cardTitle">
+  03-001 Cloaked Cleric with Staff
+ </div><div class="cardRange">
+  Fantasy Adventurers (03)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Tom Meier
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-01-004v2.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human sword">
+ <a name="03-004"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-1920px"> 
+ </div><div class="cardTitle">
+  03-004 King of the Realm
+ </div><div class="cardRange">
+  Fantasy Adventurers (03)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Dennis Mize
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-03-004.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human civilian sword">
+ <a name="03-005"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2040px"> 
+ </div><div class="cardTitle">
+  03-005 Lord of the Household
+ </div><div class="cardRange">
+  Fantasy Adventurers (03)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Dennis Mize
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-03-005.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human civilian">
+ <a name="03-007"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2280px"> 
+ </div><div class="cardTitle">
+  03-007 Lady in Waiting
+ </div><div class="cardRange">
+  Fantasy Adventurers (03)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Dennis Mize
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-03-007.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female human civilian">
+ <a name="03-007"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2280px"> 
+ </div><div class="cardTitle">
+  03-007 Lady in Waiting
+ </div><div class="cardRange">
+  Fantasy Adventurers (03)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Dennis Mize
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-03-007.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human staff">
+ <a name="03-041"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2400px"> 
+ </div><div class="cardTitle">
+  03-041 Mage
+ </div><div class="cardRange">
+  Fantasy Adventurers (03)
+ </div><div class="cardPartOf">
+  part of 01-333 also
+ </div><div class="cardSculptor">
+  Sculptor: Tom Meier
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Partha-3stage-333b.jpg">[1]</a> <a href="http://www.ralparthaeurope.co.uk/shop/ral-partha-fantasy-c-37/fantasy-adventurers-c-37_40/03041-mage-p-1308.html">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="10-503a"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2520px"> 
+ </div><div class="cardTitle">
+  10-503a Silver Dragon
+ </div><div class="cardRange">
+  AD&D Dragonlance
+ </div><div class="cardPartOf">
+  part of <a href="#10-503">10-503</a>
+ </div><div class="cardSculptor">
+  Sculptor: Tom Meier
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="11-424"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2760px"> 
+ </div><div class="cardTitle">
+  11-424 Unicorn
+ </div><div class="cardRange">
+  AD&D Monsters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Sandra Garrity
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-11-424.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male human elf sword">
+ <a name="53-903a"></a>
+ <div class="cardIcon">
+  <img src="./RP-gallery.jpg" style="margin-left:-2880px"> 
+ </div><div class="cardTitle">
+  53-903a Ninja
+ </div><div class="cardRange">
+  Bushido
+ </div><div class="cardPartOf">
+  part of <a href="#53-903">53-903</a>
+ </div><div class="cardSculptor">
+  Sculptor: Bob Charrette
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-bu-53-903a.jpg">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Reaper Miniatures</div>
+<div class="card male elf sword">
+ <a name="02849"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  02849 Loryn Stormblade, Elf
+ </div><div class="cardRange">
+  Dark Heaven Legends, Warlord
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.reapermini.com/figurefinder#detail/02849">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf human">
+ <a name="02869"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  02869 Elise, The Witch
+ </div><div class="cardRange">
+  Dark Heaven Legends
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.reapermini.com/figurefinder#detail/02869">[1]</a>
+ </div><div class="cardOwner">
+  [mm]
+ </div>
+</div>
+<div class="card male elf sword">
+ <a name="03016"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  03016 Toreth, Male Dark Elf
+ </div><div class="cardRange">
+  Dark Heaven Legends
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: John Winter
+ </div><div class="cardReferences">
+  <a href="http://www.reapermini.com/figurefinder#detail/03016">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf human bow">
+ <a name="03166"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  03166 Alistrilee, Elf Archer
+ </div><div class="cardRange">
+  Dark Heaven Legends
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Bobby Jackson
+ </div><div class="cardReferences">
+  <a href="http://www.reapermini.com/figurefinder#detail/03166">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male orc sword">
+ <a name="14197"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  14197 Gakalath, Reven Sergeant
+ </div><div class="cardRange">
+  Warlord
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Ben Siens
+ </div><div class="cardReferences">
+  <a href="http://www.reapermini.com/figurefinder#detail/14197">[1]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+
+<div class="card orc beast male">
+ <a name="77004"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  77004 Cave Troll
+ </div><div class="cardRange">
+  Dark Heaven Legends Bones
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Ben Siens
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="77043"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  77043 Eye Beast
+ </div><div class="cardRange">
+  Dark Heaven Legends Bones
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card demon female">
+ <a name="77067"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  77067 Virina, Female Demon
+ </div><div class="cardRange">
+  Dark Heaven Legends Bones
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+
+<div class="card beast">
+ <a name="77228"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  77228 Chthon
+ </div><div class="cardRange">
+  Dark Heaven Legends Bones
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kevin Williams
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card demon male">
+ <a name="77261"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  77261 Nabassu (Bat Demon)
+ </div><div class="cardRange">
+  Dark Heaven Legends Bones
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Bob Ridolfi
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="77271"></a>
+ <div class="cardIcon">
+  <img src="./RMI-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  77271 Dragon Hatchling Blue
+ </div><div class="cardRange">
+  Dark Heaven Legends Bones
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Kevin Williams
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Stonehaven Miniatures</div>
+<div class="card female elf bow">
+ <a name="ELF001"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  ELF001 Elf Archer
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf civilian musician">
+ <a name="ELF003"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  ELF003 Elf Bard
+ </div><div class="cardRange">
+  Elven Adventurers - Luthwaine's Caravan
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf spear">
+ <a name="ELF004"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  ELF004 Elf Ceremonial Guard
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf">
+ <a name="ELF006"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  ELF006 Elf Druid
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf civilian">
+ <a name="ELF010"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  ELF010 Elf Frost Queen
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf civilian book">
+ <a name="ELF014"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  ELF014 Elf Librarian
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf staff spear">
+ <a name="ELF016"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  ELF016 Elf Mage
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf">
+ <a name="ELF017"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  ELF017 Elf Monk
+ </div><div class="cardRange">
+  Elven Adventurers - Strymian Thieves' Guild
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf civilian book">
+ <a name="ELF019"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  ELF019 Elf Patriarch
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf sword bow">
+ <a name="ELF023"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  ELF023 Elf Ranger
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf sword">
+ <a name="ELF024"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  ELF024 Elf Rogue
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf bow">
+ <a name="ELF025"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1680px"> 
+ </div><div class="cardTitle">
+  ELF025 Elf Scout
+ </div><div class="cardRange">
+  Elven Adventurers - League of Cyn'Thark
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf spear">
+ <a name="ELF028"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1800px"> 
+ </div><div class="cardTitle">
+  ELF028 Elf Spearman
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female elf axe">
+ <a name="ELF029a"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-1920px"> 
+ </div><div class="cardTitle">
+  ELF029a Elf Swan Magus
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of ELF029
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name="ELF029b"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2040px"> 
+ </div><div class="cardTitle">
+  ELF029b Swan companion
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of ELF029
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf">
+ <a name="ELF031"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-4200px"> 
+ </div><div class="cardTitle">
+  ELF031 Elf Unconscious
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf sword axe">
+ <a name="ELF033"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2160px"> 
+ </div><div class="cardTitle">
+  ELF033 Elf Weapons Master
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf staff">
+ <a name="ELF034"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2280px"> 
+ </div><div class="cardTitle">
+  ELF034 Elf Wizard
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male elf staff">
+ <a name="ELF037a"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2400px"> 
+ </div><div class="cardTitle">
+  ELF037a Mounted Elf Wizard 
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  part of ELF037
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name="ELF037b"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2520px"> 
+ </div><div class="cardTitle">
+  ELF037b Stag Mount
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  part of ELF037
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male kid civilian">
+ <a name="ELF038a"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2640px"> 
+ </div><div class="cardTitle">
+  ELF038a Elf Kid
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of ELF038
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male kid civilian sword">
+ <a name="ELF038b"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2760px"> 
+ </div><div class="cardTitle">
+  ELF038b Elf Boy w/ sword
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of ELF038
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female kid civilian musician">
+ <a name="ELF038c"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-2880px"> 
+ </div><div class="cardTitle">
+  ELF038c Elf Girl w / flute
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of ELF038
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+
+<div class="card lizardfolk bow">
+ <a name="GRP001"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3120px"> 
+ </div><div class="cardTitle">
+  GRP001 Grippli Archer
+ </div><div class="cardRange">
+  Elven Adventurers - League of Cyn'Thark
+ </div><div class="cardPartOf">
+  part of Grippli Hunting Party
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk">
+ <a name="GRP002"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3240px"> 
+ </div><div class="cardTitle">
+  GRP002 Grippli Potion Maker
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of Elven Companion Expansion
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk spear">
+ <a name="GRP003"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3360px"> 
+ </div><div class="cardTitle">
+  GRP003 Grippli Spearman
+ </div><div class="cardRange">
+  Elven Adventurers - League of Cyn'Thark
+ </div><div class="cardPartOf">
+  part of Grippli Hunting Party
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk sword">
+ <a name="GRP004"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3480px"> 
+ </div><div class="cardTitle">
+  GRP004 Grippli Warrior
+ </div><div class="cardRange">
+  Elven Adventurers - League of Cyn'Thark
+ </div><div class="cardPartOf">
+  part of Grippli Hunting Party
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male fairy axe">
+ <a name="PX001"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3720px"> 
+ </div><div class="cardTitle">
+  PX001 Pixie Fighter
+ </div><div class="cardRange">
+  Elven Adventurers - Strymian Thieves' Guild
+ </div><div class="cardPartOf">
+  part of Pixie Questers
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male fairy sword">
+ <a name="PX002"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3840px"> 
+ </div><div class="cardTitle">
+  PX002 Pixie Thief
+ </div><div class="cardRange">
+  Elven Adventurers - Strymian Thieves' Guild
+ </div><div class="cardPartOf">
+  part of Pixie Questers
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card female fairy">
+ <a name="PX003"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3960px"> 
+ </div><div class="cardTitle">
+  PX003 Pixie Mage
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of Elven Companion Expansion
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male fairy">
+ <a name="PX004"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-4080px"> 
+ </div><div class="cardTitle">
+  PX004 Pixie Wizard 
+ </div><div class="cardRange">
+  Elven Adventurers - Strymian Thieves' Guild
+ </div><div class="cardPartOf">
+  part of Pixie Questers
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male axe">
+ <a name="GRM002"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3000px"> 
+ </div><div class="cardTitle">
+  GRM002 Gremlin Raider
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  part of Elven Companion Expansion
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name="CRT001"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  CRT001 Dog
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  part of Animal Companions
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="CRT004"></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-120px"> 
+ </div><div class="cardTitle">
+  CRT004 Enting
+ </div><div class="cardRange">
+  Elven Adventurers - Keepers of Everwood
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-3600px"> 
+ </div><div class="cardTitle">
+   Owl
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  part of Animal Companions
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./SH-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+   Deer
+ </div><div class="cardRange">
+  Elven Adventurers - Kral's Champions
+ </div><div class="cardPartOf">
+  part of Animal Companions
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name="ITM001"></a>
+ <div class="cardIcon">
+   
+ </div><div class="cardTitle">
+  ITM001 Treasure Chest with Removable Lid
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name=""></a>
+ <div class="cardIcon">
+   
+ </div><div class="cardTitle">
+   Adventuring Aids
+ </div><div class="cardRange">
+  Elven Adventurers - League of Cyn'Thark
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name=""></a>
+ <div class="cardIcon">
+   
+ </div><div class="cardTitle">
+   Dinner Bits
+ </div><div class="cardRange">
+  Elven Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name=""></a>
+ <div class="cardIcon">
+   
+ </div><div class="cardTitle">
+   Musical Instruments
+ </div><div class="cardRange">
+  Elven Adventurers - Luthwaine's Caravan
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Michael T. Evans
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Wargames Foundry</div>
+<div class="card male human musician">
+ <a name="SCY1c"></a>
+ <div class="cardIcon">
+  <img src="./WF-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  SCY1c Scythian w/ signaling horn
+ </div><div class="cardRange">
+  Scythians & Cimmerians
+ </div><div class="cardPartOf">
+  part of <a href="#SCY1">SCY1</a>
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">WizKids</div>
+<div class="card beast">
+ <a name="029"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1800px"> 
+ </div><div class="cardTitle">
+  029 Air Elemental
+ </div><div class="cardRange">
+  D&D Icons of the Realm - Elemental Evil
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk sword">
+ <a name="059"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1920px"> 
+ </div><div class="cardTitle">
+  059 Whitespawn Hordeling (repainted)
+ </div><div class="cardRange">
+  D&D Miniatures - War of the Dragon Queen
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card human elf male sword musician">
+ <a name="72632a"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2160px"> 
+ </div><div class="cardTitle">
+  72632a Human Bard
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Human Bard (#72632)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card human elf male musician">
+ <a name="72632b"></a>
+ <div class="cardIcon">
+  <img src="https://cdn.shopify.com/s/files/1/2337/9163/products/72632-HumanBard_www.imagesplitter.net_-0-0_580x.png?v=1545545346" style="width:100%"> 
+ </div><div class="cardTitle">
+  72632b Human Bard
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Human Bard (#72632)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card human male axe bow">
+ <a name="73203b"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2280px"> 
+ </div><div class="cardTitle">
+  73203b Earth Genasi Fighter
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Earth Genasi Fighter (#73203)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk elf orc goblin human sword">
+ <a name="73190a"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2880px"> 
+ </div><div class="cardTitle">
+  73190a Githyanki
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Githyanki (#73190)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast male">
+ <a name="73194a"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-3000px"> 
+ </div><div class="cardTitle">
+  73194a Werewolf
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Werewolves (#73194)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast male">
+ <a name="73194b"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-3120px"> 
+ </div><div class="cardTitle">
+  73194b Werewolf
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Werewolves (#73194)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk male sword beast">
+ <a name="73195b"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-3240px"> 
+ </div><div class="cardTitle">
+  73195b Yuan-Ti Malison
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Yuan-Ti Malisons (#73195)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk male axe">
+ <a name="73200b"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-3360px"> 
+ </div><div class="cardTitle">
+  73200b Dragonborn Male Paladin
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Dragonborn Male Paladin (#73200)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal">
+ <a name="73220f"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2400px"> 
+ </div><div class="cardTitle">
+  73220f Horse with Saddle
+ </div><div class="cardRange">
+  D&D Nolzur´s Marvelous Miniatures
+ </div><div class="cardPartOf">
+  part of Adventurer’s Camp (#73220)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card human male spear axe bow sword">
+ <a name="72583a"></a>
+ <div class="cardIcon">
+   
+ </div><div class="cardTitle">
+  72583a Town Guards
+ </div><div class="cardRange">
+  Deep Cuts
+ </div><div class="cardPartOf">
+  part of Town Guards (#72583)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal beast">
+ <a name="73089"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2520px"> 
+ </div><div class="cardTitle">
+  73089 Swarm of Rats
+ </div><div class="cardRange">
+  Deep Cuts
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card animal beast">
+ <a name="73094b"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2640px"> 
+ </div><div class="cardTitle">
+  73094b Toad
+ </div><div class="cardRange">
+  Deep Cuts
+ </div><div class="cardPartOf">
+  part of Familiars (#73094)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card human elf female sword">
+ <a name="73095b"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2760px"> 
+ </div><div class="cardTitle">
+  73095b Pirate
+ </div><div class="cardRange">
+  Deep Cuts
+ </div><div class="cardPartOf">
+  part of Pirates (#73095)
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card undead">
+ <a name="542"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-0px"> 
+ </div><div class="cardTitle">
+  542 Shade
+ </div><div class="cardRange">
+  Mage Knight Metal
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="062"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1080px"> 
+ </div><div class="cardTitle">
+  062 Wood Golem (rebased, repainted)
+ </div><div class="cardRange">
+  Mage Knight Rebellion
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="072"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1200px"> 
+ </div><div class="cardTitle">
+  072 Living Elemental (rebased)
+ </div><div class="cardRange">
+  Mage Knight Rebellion
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="130"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1320px"> 
+ </div><div class="cardTitle">
+  130 Deep Spawn (rebased)
+ </div><div class="cardRange">
+  Mage Knight Rebellion
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card undead sword">
+ <a name="155"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1440px"> 
+ </div><div class="cardTitle">
+  155 Wraith (rebased)
+ </div><div class="cardRange">
+  Mage Knight Rebellion
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card male bow">
+ <a name="005"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-240px"> 
+ </div><div class="cardTitle">
+  005 Gnoll Fletcher (rebased)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1986), original sculpture Ral Partha 02-939c
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card undead bow">
+ <a name="010"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-360px"> 
+ </div><div class="cardTitle">
+  010 Skeleton Archer (rebased, repainted)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: original sculpture Ral Partha 01-219
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card undead bow">
+ <a name="011"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-480px"> 
+ </div><div class="cardTitle">
+  011 Skeleton Archer (rebased, repainted)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: original sculpture Ral Partha 01-219
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card lizardfolk spear">
+ <a name="015"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-600px"> 
+ </div><div class="cardTitle">
+  015 Lizard Man (rebased)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="019"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-720px"> 
+ </div><div class="cardTitle">
+  019 Magma Guardian (rebased)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card demon male">
+ <a name="026"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-840px"> 
+ </div><div class="cardTitle">
+  026 Potbellied Gremlin (rebased)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Tom Meier, original sculpture Ral Partha 01-014, 02-405 
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="033"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-2040px"> 
+ </div><div class="cardTitle">
+  033 Werecat (rebased, repainted)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card beast">
+ <a name="055"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-960px"> 
+ </div><div class="cardTitle">
+  055 Hydra Serpent (rebased)
+ </div><div class="cardRange">
+  Mage Knight Dungeon
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1983), original sculpture Ral Partha 02-901
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card demon male">
+ <a name="015"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1560px"> 
+ </div><div class="cardTitle">
+  015 Sentinel Devil (Barbed Devil)
+ </div><div class="cardRange">
+  Pathfinder Battles - Skull & Shackles
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card demon male">
+ <a name="012"></a>
+ <div class="cardIcon">
+  <img src="./WZK-gallery.jpg" style="margin-left:-1680px"> 
+ </div><div class="cardTitle">
+  012 Slime Demon
+ </div><div class="cardRange">
+  Pathfinder Battles - Wrath of the Righteous
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Manufacturer">Blisters & Boxes</div><div>The pictures below are for reference purpose only. I do not claim any rights on them. The copyrights of the pictures remain with their respective owners. <br><br></div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (EM4 Miniatures)</div>
+<div class="card">
+ <a name="Elf1"></a>
+ <div class="cardIcon">
+  <img src="./ElfseraProduct_2542.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  Elf1 Elfsera 1 - The Adventurers
+ </div><div class="cardRange">
+  Elfsera 
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.em4miniatures.com/acatalog/Eflsera_Fantasy_Characters.html">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Fantasy Production)</div>
+<div class="card">
+ <a name="17010"></a>
+ <div class="cardIcon">
+  <img src="./FP-17010_2_woelfe.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  17010 Wolves
+ </div><div class="cardRange">
+  The Dark Eye - Creatures
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/creatures-17000-c-30_34/17010-wolves-2-p-1007.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsakreaturen&id=103">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="18005"></a>
+ <div class="cardIcon">
+  <img src="./FP-18005_2_garde-pikeniere.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  18005 Horasian Guard Pikemen
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/adventurers-at-arms-18000-c-30_35/18005-horasian-guard-pikemen-2-p-1054.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsaaventurier&id=150">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="18014"></a>
+ <div class="cardIcon">
+  <img src="./FP-18014_untote.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  18014 Skeleton Warriors
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Werner Klocke
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/adventurers-at-arms-18000-c-30_35/18014-skeleton-warriors-2-p-1063.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsaaventurier&id=159">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="18029"></a>
+ <div class="cardIcon">
+  <img src="./FP-18029_2_thorwal-piraten.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  18029 Thorwalian Raiders
+ </div><div class="cardRange">
+  The Dark Eye - Adventurers at Arms
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.ralparthaeurope.co.uk/shop/das-schwarze-auge-the-dark-eye-c-30/adventurers-at-arms-18000-c-30_35/18029-thorwalian-raiders-2-p-1078.html">[1]</a> <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=dsaaventurier&id=174">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="19002"></a>
+ <div class="cardIcon">
+  <img src="./FP-19002_leichte_weidener_ritter.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  19002 Weiden Light Knights
+ </div><div class="cardRange">
+  Armalion
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.armalion-kompendium.de/?section=miniaturen&subsection=armalionboxen&id=188">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Games Workshop)</div>
+<div class="card">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-WarriorsLastAlliance1.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+   Warriors of the Last Alliance
+ </div><div class="cardRange">
+  The Lord of the Rings Battle Strategy Game (99121499024)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="https://www.games-workshop.com/en-US/Warriors-of-the-Last-Alliance">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name=""></a>
+ <div class="cardIcon">
+  <img src="./GW-WarriorsLastAlliance3.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+   Warriors of the Last Alliance
+ </div><div class="cardRange">
+  The Lord of the Rings Battle Strategy Game (99121499024)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="https://www.games-workshop.com/en-US/Warriors-of-the-Last-Alliance">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Grenadier)</div>
+<div class="card">
+ <a name="021"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/7/74/G-flbp-021.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  021 Dwarf Command Group 
+ </div><div class="cardRange">
+  Fantasy Lords - Second Series
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-flbp-021.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="023"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/8/8a/G-flbp-023.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  023 Amazon Command Group 
+ </div><div class="cardRange">
+  Fantasy Lords - Second Series
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-flbp-023.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="542"></a>
+ <div class="cardIcon">
+  <img src="./G-542_blister.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  542 Tsin Dragon
+ </div><div class="cardRange">
+  Fantasy Lords - 500 Series
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="931"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/a/a9/G-nlfw-931-cat.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  931 Dwarves with Spears
+ </div><div class="cardRange">
+  Fantasy Warriors
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-931-cat.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="934"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/f/f4/G-nlfw-934-cat.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  934 Dwarves with Crossbows
+ </div><div class="cardRange">
+  Fantasy Warriors
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-934-cat.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="943"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/0/0c/G-nlfw-943-cat.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  943 Orcs with Hand Weapons
+ </div><div class="cardRange">
+  Fantasy Warriors
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-nlfw-943-cat.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="1603"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/thumb/b/b8/G-blords-1603-ins.jpg/800px-G-blords-1603-ins.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  1603 Dwarves, Army of the Gold Mountain 
+ </div><div class="cardRange">
+  Battle Lords Box Sets
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Nick Lund
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-blords-1603-box.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-blords-1603-ins.jpg">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="2003"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/thumb/e/e5/G-asfs-2003z1.jpg/800px-G-asfs-2003z1.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  2003 Dwarves
+ </div><div class="cardRange">
+  AD&D - Small Figure Sets
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2003.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2003z1.jpg">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="2007"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/thumb/4/43/G-asfs-2007z.jpg/800px-G-asfs-2007z.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  2007 Females
+ </div><div class="cardRange">
+  AD&D - Small Figure Sets
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2007.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2007z.jpg">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="2013"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/9/93/G-asfs-2013z.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  2013 Adventuring Party
+ </div><div class="cardRange">
+  AD&D - Small Figure Sets
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2013.jpg">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-asfs-2013z.jpg">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="8002"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/f/f8/G-albs-8002-ins.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  8002 Action Art: Monsters
+ </div><div class="cardRange">
+  Action Art Series
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Action_Art_Series_%28Grenadier%29#8002">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:G-albs-8002-ins.jpg">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Harlequin Miniatures)</div>
+<div class="card">
+ <a name="0808"></a>
+ <div class="cardIcon">
+  <img src="./fa0808.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  0808 Averaign Spearmen III
+ </div><div class="cardRange">
+  Fantasy Armies - Men of Averaign
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="0239"></a>
+ <div class="cardIcon">
+  <img src="./fa0239.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  0239 Goblin Fighters I
+ </div><div class="cardRange">
+  Fantasy Armies - Orcs & Goblins
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://collector-info.com/Manufacturer/HAR/HARFAA/HARFAAOG/5188-Orcs&Goblins-Goblin-Fighter-I.html">[1]</a> <a href="http://www.nobleknight.com/ProductDetail.asp_Q_ProductID_E_2147373975_A_InventoryID_E_2147519856_A_ProductLineID_E_2137418040_A_ManufacturerID_E_189_A_CategoryID_E_5_A_GenreID_E_0">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="0240"></a>
+ <div class="cardIcon">
+  <img src="./fa0240.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  0240 Goblin Fighters II 
+ </div><div class="cardRange">
+  Fantasy Armies - Orcs & Goblins
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://marbles.frothersunite.com/imag/gobbo/fa0240.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="77915"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/0/0d/Harlequin-FA77915c.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  77915 Boglug's Orc Battle Carts
+ </div><div class="cardRange">
+  Fantasy Armies - Orcs & Goblins
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Box_Sets_%28Harlequin%29#77915">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="1015"></a>
+ <div class="cardIcon">
+  <img src="./hm1015.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  1015 Skeleton Elite Warriors
+ </div><div class="cardRange">
+  Undead
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Hobby Products)</div>
+<div class="card">
+ <a name="C1008"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/a/aa/MetalMagic-C1008-cat.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  C1008 Dwarves
+ </div><div class="cardRange">
+  Metal Magic - Fantasy
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Josef Ochmann
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Metal_Magic_-_Fantasy#C1008">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:MetalMagic-C1008-cat.jpg">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Prince August)</div>
+<div class="card">
+ <a name="CH25B"></a>
+ <div class="cardIcon">
+  <img src="./PA-CH25B.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  CH25B Armored Cleric (3 poses)
+ </div><div class="cardRange">
+  Fantasy Armies Cast - Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Chris Tubb
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Fantasy_Armies_Cast_%28Prince_August%29#VL_Villagers">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Rafm Miniatures)</div>
+<div class="card">
+ <a name="3071"></a>
+ <div class="cardIcon">
+  <img src="./RAF-3071.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  3071 Elves of the Isles: Wind Rider Cavalry
+ </div><div class="cardRange">
+  Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name="3206"></a>
+ <div class="cardIcon">
+  <img src="./RAF-3206.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  3206 Orcs w/ crossbows & goblin w/ mantlet
+ </div><div class="cardRange">
+  Creatures
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Orcs_%28RAFM%29#Orc_crossbow_.26_goblin_mantlet">[1]</a> <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rafm-ORC-3206.jpg">[2]</a>
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div class="card">
+ <a name="3613"></a>
+ <div class="cardIcon">
+  <img src="./RAF-3613.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  3613 Thrafgar's Body Guards
+ </div><div class="cardRange">
+  Adventurers
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  
+ </div><div class="cardOwner">
+  [cpl]
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Ral Partha)</div>
+<div class="card">
+ <a name="01-333"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/f/fa/Partha-3stage-333z.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  01-333 Wizard
+ </div><div class="cardRange">
+  3-Stage Player Characters
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Tom Meier
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Partha-3stage-333z.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="02-053"></a>
+ <div class="cardIcon">
+  <img src="./RP-02-053_catalog.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  02-053 Goblin Archers
+ </div><div class="cardRange">
+  Fantasy Collectors Series Revised (aka Fantasy Armies)
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Fantasy_Collectors_Series_Revised#Goblins">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="02-947"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/a/ac/Rp-02-947.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  02-947 Hero on Warhorse
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1986)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-947.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="02-948"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/4/44/Rp-02-948.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  02-948 Archers
+ </div><div class="cardRange">
+  All Things Dark and Dangerous
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Julie Guthrie (1987)
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-02-948.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="10-503"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/thumb/6/6d/Rp-10-503-bob.jpg/758px-Rp-10-503-bob.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  10-503 Huma's Silver Dragon 
+ </div><div class="cardRange">
+  AD&D Dragonlance
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Tom Meier
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:Rp-10-503-bob.jpg">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div class="card">
+ <a name="53-903"></a>
+ <div class="cardIcon">
+  <img src="http://www.miniatures-workshop.com/lostminiswiki/images/e/ec/RP-bu-53-903x.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  53-903 Ninja
+ </div><div class="cardRange">
+  Bushido
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  Sculptor: Bob Charrette
+ </div><div class="cardReferences">
+  <a href="http://www.miniatures-workshop.com/lostminiswiki/index.php?title=Image:RP-bu-53-903x.jpg">[1]</a> <a href="http://www.parroom.net/parroomshowroom/v/Nippon/HON_005_jpg.jpg.html">[2]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+<div style="clear:left;"></div><div class="Blister">Blister & Boxes (Wargames Foundry)</div>
+<div class="card">
+ <a name="SCY1"></a>
+ <div class="cardIcon">
+  <img src="./WF-SCY1.jpg" style="width:100%"> 
+ </div><div class="cardTitle">
+  SCY1 Scythian Command
+ </div><div class="cardRange">
+  Scythians & Cimmerians
+ </div><div class="cardPartOf">
+  
+ </div><div class="cardSculptor">
+  
+ </div><div class="cardReferences">
+  <a href="http://reference.wargamesfoundry.com/historical_ranges/single_packs/ancients/scythian/scythian_command_scy001/">[1]</a>
+ </div><div class="cardOwner">
+  
+ </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
